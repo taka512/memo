@@ -1,0 +1,63 @@
+## Docker MCP Gateway
+
+インストール
+
+```
+## リリース一覧から最新バージョンを取得
+## https://github.com/docker/mcp-gateway/releases
+$ wget https://github.com/docker/mcp-gateway/releases/download/v0.13.0/docker-mcp-linux-amd64.tar.gz
+$ tar xvfz docker-mcp-linux-amd64.tar.gz
+$ mkdir -p ~/.docker/cli-plugins 
+$ mv docker-mcp ~/.docker/cli-plugins 
+$ chmod +x ~/.docker/cli-plugins/docker-mcp
+```
+
+カタログ一覧
+```
+docker mcp catalog show
+```
+
+MCP有効化
+
+```
+docker mcp server enable fetch
+```
+MCP無効化
+
+```
+docker mcp server disable slack
+```
+一覧
+```
+docker mcp server list
+```
+
+
+## MCP server
+
+[MCP Servers for agent mode](https://code.visualstudio.com/mcp)
+
+## Playwright MCP
+
+ブラウザテストを行う
+
+https://github.com/microsoft/playwright-mcp
+
+### GitHub MCP Server
+
+https://github.com/modelcontextprotocol/servers-archived/tree/main/src/github
+
+### Fetch MCP Server
+
+Webページを取得して、その内容をMarkdownに変換する
+https://github.com/modelcontextprotocol/servers/tree/main/src/fetch
+## link
+
+- [MCPとは何か 〜AIエージェントの為の標準プロトコル〜](https://blog.cloudnative.co.jp/27994/)
+- [Model Context Protocol（MCP）とは？生成 AI の可能性を広げる新しい標準](https://zenn.dev/cloud_ace/articles/model-context-protocol)
+- [Obsidian MCPサーバーをClaude Desktopで使ってみた](https://dev.classmethod.jp/articles/obsidian-mcp-claude-desktop-integration-hands-on/)
+- [o3 MCPでClaude Codeが最強の検索力を手に入れた](https://zenn.dev/yoshiko/articles/claude-code-with-o3)
+- [Docker MCP Gatewayがすんばらしい](https://qiita.com/moritalous/items/8789a37b7db451cc1dba)
+- [Docker MCP日本語](https://www.docker.com/ja-jp/blog/docker-mcp-gateway-secure-infrastructure-for-agentic-ai/)
+- [Docker MCP公式](https://docs.docker.com/ai/mcp-gateway/)
+
