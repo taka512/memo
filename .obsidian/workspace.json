@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ai/mcp.md",
+                "file": "docs/terraform.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "mcp"
+              "title": "terraform"
             }
           }
         ]
@@ -170,11 +170,21 @@
   },
   "active": "dafb58ef26bfda5a",
   "lastOpenFiles": [
-    "ai/mcp.docker.png",
-    "ai/mcp.md",
-    "ai/gemini.md",
+    "docs/ai/mcp.md",
+    "docs/ai/gemini.md",
+    "CLAUDE.md",
+    "docs/terraform.md",
+    "docs/ai/mcp.docker.png",
+    "docs/ai",
+    "docs",
     "terraform.md",
     "README.md",
+    "auto-generated/explanation/ai_tools.md",
+    "ai/gemini.md",
+    "auto-generated/explanation",
+    "auto-generated",
+    "ai/mcp.md",
+    "ai/mcp.docker.png",
     "tmp/hoge.md",
     "tmp.md",
     "tmp",
