@@ -113,13 +113,6 @@ $ gemini
     - fetch
 ```
 
-実行
-
-```
-@/Users/n0bisuke/Library/Application\ Support/CleanShot/media/media_a5b7ZuVIMr/CleanShot\ 2025-06-27\ at\ 12.17.34.png
-  この画像をgyazo-uploaderでアップロードして
-```
-
 ## Gemini Code Assist
 
 IDEのコーディングアシスタント

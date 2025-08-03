@@ -14,7 +14,7 @@ $ chmod +x ~/.docker/cli-plugins/docker-mcp
 
 MCPの設定はダッシュボードから有効化するのが良さそう（認証もそこでできる）
 
-![[screen2025-08-03 23.11.56.png]]
+![[mcp.docker.png]]
 
 カタログ一覧
 ```
