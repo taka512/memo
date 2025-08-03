@@ -12,18 +12,19 @@ $ mv docker-mcp ~/.docker/cli-plugins
 $ chmod +x ~/.docker/cli-plugins/docker-mcp
 ```
 
+MCPの設定はダッシュボードから有効化するのが良さそう（認証もそこでできる）
+
+![[screen2025-08-03 23.11.56.png]]
+
 カタログ一覧
 ```
 docker mcp catalog show
 ```
-
 MCP有効化
-
 ```
 docker mcp server enable fetch
 ```
 MCP無効化
-
 ```
 docker mcp server disable slack
 ```
@@ -32,25 +33,21 @@ docker mcp server disable slack
 docker mcp server list
 ```
 
-
 ## MCP server
 
 [MCP Servers for agent mode](https://code.visualstudio.com/mcp)
 
-## Playwright MCP
+利用するMCP server
 
-ブラウザテストを行う
+- Playwright MCP
+	- ブラウザテストを行う。スクショ撮ってくれる
+-  GitHub MCP Server
+	- githubの操作
+- Fetch MCP Server
+	- Webページを取得して、その内容をMarkdownに変換する
+- terraform
+	- terraformの知見を授けてくれるっぽい
 
-https://github.com/microsoft/playwright-mcp
-
-### GitHub MCP Server
-
-https://github.com/modelcontextprotocol/servers-archived/tree/main/src/github
-
-### Fetch MCP Server
-
-Webページを取得して、その内容をMarkdownに変換する
-https://github.com/modelcontextprotocol/servers/tree/main/src/fetch
 ## link
 
 - [MCPとは何か 〜AIエージェントの為の標準プロトコル〜](https://blog.cloudnative.co.jp/27994/)
