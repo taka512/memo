@@ -1,3 +1,9 @@
+
+MCPはPCに直接設定する方法をDocker MCP Gatewayを利用してDocker経由でMCPを利用する方法がある
+ローカル環境はなるべく汚したくないのでDocker MCP Gatewayを採用
+
+![[MCP-Gateway-blog-Fig.avif]]
+
 ## Docker MCP Gateway
 
 インストール
@@ -47,6 +53,10 @@ docker mcp server list
 	- Webページを取得して、その内容をMarkdownに変換する
 - terraform
 	- terraformの知見を授けてくれるっぽい
+- AWS Documentation
+	- AWSの知見を授けてくれる
+-  AWS Terraform
+	- AWS terraformでのbest practiceを授けてくれる
 
 ## link
 
@@ -55,6 +65,6 @@ docker mcp server list
 - [Obsidian MCPサーバーをClaude Desktopで使ってみた](https://dev.classmethod.jp/articles/obsidian-mcp-claude-desktop-integration-hands-on/)
 - [o3 MCPでClaude Codeが最強の検索力を手に入れた](https://zenn.dev/yoshiko/articles/claude-code-with-o3)
 - [Docker MCP Gatewayがすんばらしい](https://qiita.com/moritalous/items/8789a37b7db451cc1dba)
-- [Docker MCP日本語](https://www.docker.com/ja-jp/blog/docker-mcp-gateway-secure-infrastructure-for-agentic-ai/)
-- [Docker MCP公式](https://docs.docker.com/ai/mcp-gateway/)
+- [Docker MCP Gateway日本語](https://www.docker.com/ja-jp/blog/docker-mcp-gateway-secure-infrastructure-for-agentic-ai/)
+- [Docker MCP Gateway公式](https://docs.docker.com/ai/mcp-gateway/)
 
