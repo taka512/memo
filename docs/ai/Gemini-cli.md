@@ -1,5 +1,18 @@
 
-## install
+GooleのCLIインタフェースのAIエージェント
+
+## 料金プラン
+
+https://gemini.google/subscriptions/
+
+```
+free ￥0
+Pro: ￥2,900
+Ultra: ￥36,400
+```
+
+
+## インストール
 
 ```
 sudo npm install -g @google/gemini-cli
