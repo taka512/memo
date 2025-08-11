@@ -115,4 +115,5 @@ codex --model gpt-5 --full-auto "Build a simple photobooth application with came
 
 - [OpenAI developer platform](https://platform.openai.com/docs/overview)
 - [CodeX(Github)](https://github.com/openai/codex)
+- [新Codex CLIの使い方](https://blog.lai.so/codex-rs-intro/)
 
