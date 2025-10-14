@@ -12,8 +12,9 @@ Max: $200
 
 ## install
 
+```
 npm install -g @anthropic-ai/claude-code
-
+```
 
 ## command option
 
