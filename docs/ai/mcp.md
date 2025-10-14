@@ -4,7 +4,7 @@ MCPはPCに直接設定する方法をDocker MCP Gatewayを利用してDocker経
 
 ![[MCP-Gateway-blog-Fig.avif]]
 
-## Docker MCP Gateway
+## Docker MCP Toolkit
 
 インストール
 
@@ -58,6 +58,25 @@ docker mcp server list
 -  AWS Terraform
 	- AWS terraformでのbest practiceを授けてくれる
 
+## GitHub MCP Registry
+
+https://www.publickey1.jp/blog/25/githubmcpgithub_mcp_registry.html
+
+## AWS Knowledge MCP Server
+
+設定例
+
+```
+{
+    "mcpServers": {
+        "aws-knowledge-mcp-server": {
+            "url": "https://knowledge-mcp.global.api.aws"
+        }
+    }
+}
+```
+
+
 ## link
 
 - [MCPとは何か 〜AIエージェントの為の標準プロトコル〜](https://blog.cloudnative.co.jp/27994/)
@@ -67,4 +86,5 @@ docker mcp server list
 - [Docker MCP Gatewayがすんばらしい](https://qiita.com/moritalous/items/8789a37b7db451cc1dba)
 - [Docker MCP Gateway日本語](https://www.docker.com/ja-jp/blog/docker-mcp-gateway-secure-infrastructure-for-agentic-ai/)
 - [Docker MCP Gateway公式](https://docs.docker.com/ai/mcp-gateway/)
+- [MCPの認証と認可 - MCP Meetup Tokyo 2025](https://speakerdeck.com/hi120ki/mcp-authorization)
 
