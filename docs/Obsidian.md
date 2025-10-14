@@ -9,6 +9,5 @@ obsidian Basesとは既存のObsidianノートをまとめてデータベース�
 obsidianに開いているWebページの概要をブックマーク保存する by [Obsidianに記事メモをためる Web Clipper](https://zenn.dev/sh11235/articles/07bb24f98b93e7)
 OPTION + SHIFT + Oでブラウザからブックマーク可能
 
-
 設定からインポートする設定の例
 ![[docs/default-clipper.json]]
