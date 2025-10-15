@@ -16,6 +16,50 @@ Max: $200
 npm install -g @anthropic-ai/claude-code
 ```
 
+認証
+
+```
+/login
+```
+
+[利用料のページ](https://claude.ai/settings/usage)
+## MCP
+
+**Claude Desktopでのmcpの設定**
+
+```
+cat ~/Library/Application\ Support/Claude/claude_desktop_config.json 
+{
+  "mcpServers": {
+        "aws-knowledge-mcp-server": {
+            "command": "uvx",
+            "args": [
+                "fastmcp",
+                "run",
+                "https://knowledge-mcp.global.api.aws"
+            ]
+        },
+        "MCP_DOCKER": {
+            "command": "docker",
+            "args": ["mcp", "gateway", "run"]
+        }
+    }
+}
+```
+
+**Claude Code での設定**
+
+```
+## aws knowledge
+claude mcp add aws-knowledge-mcp-server -s user -- npx mcp-remote https://knowledge-mcp.global.api.aws
+
+## serena
+claude mcp add serena -- uvx --from git+https://github.com/oraios/serena serena start-mcp-server --context ide-assistant
+
+## MCP gateway
+claude mcp add -s user mcp-docker docker mcp gateway run
+```
+
 ## command option
 
 ```
@@ -55,7 +99,6 @@ claudeコマンドを実行すると、Claude Codeが起動し、プロンプト
 
 # ディレクトリ初期化
 /init
-
 
 # モデルの切り替え（Sonnet/Opus）
 > /model
