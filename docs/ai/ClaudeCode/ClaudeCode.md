@@ -27,6 +27,8 @@ npm install -g @anthropic-ai/claude-code
 
 **Claude Desktopでのmcpの設定**
 
+「設定」→「開発者」→「設定」から編集可能
+
 ```
 cat ~/Library/Application\ Support/Claude/claude_desktop_config.json 
 {
@@ -53,13 +55,15 @@ cat ~/Library/Application\ Support/Claude/claude_desktop_config.json
 ## aws knowledge
 claude mcp add aws-knowledge-mcp-server -s user -- npx mcp-remote https://knowledge-mcp.global.api.aws
 
-## serena
-claude mcp add serena -- uvx --from git+https://github.com/oraios/serena serena start-mcp-server --context ide-assistant
-
 ## MCP gateway
 claude mcp add -s user mcp-docker docker mcp gateway run
 ```
 
+mcpの設定がエラーの場合はログに出力
+
+```
+tail -n 20 -F ~/Library/Logs/Claude/mcp*.log
+```
 ## command option
 
 ```
@@ -114,8 +118,6 @@ claudeコマンドを実行すると、Claude Codeが起動し、プロンプト
 
 # 今読み込んでいるメモリーを確認
 /memory
-
-fix error
 ```
 
 ## Sub agents
