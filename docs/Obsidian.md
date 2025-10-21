@@ -11,3 +11,25 @@ OPTION + SHIFT + Oでブラウザからブックマーク可能
 
 設定からインポートする設定の例
 ![[docs/default-clipper.json]]
+
+## Obsidian MCP
+
+obsidianにMCP経由でLLMからアクセス可能にする
+
+設定 -> コミュニティプラグインで「MCP tools」「Local REST API」をインストール
+ちなみにプラグインはvalue設定ごとにインストールが必要となる
+
+設定 -> コミュニティプラグイン「MCP tools」を選択してMCPサーバーをインストール
+ClaudeDesktopであれば「claude_desktop_config.json」に以下の設定を行う
+```
+stakahashi$ cat  ~/Library/Application\ Support/Claude/claude_desktop_config.json
+{
+  "mcpServers": {
+    "obsidian-mcp": {
+      "command": ".obsidian/plugins/mcp-tools/bin/mcp-server",
+      "env": {
+        "OBSIDIAN_API_KEY": "xxxx"
+      }
+    },
+```
+※ OBSIDIAN_API_KEYの値はLocal REST APIから取得
