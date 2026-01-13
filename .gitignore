@@ -1,3 +1,5 @@
 auto-generated/
 .obsidian/workspace.json
+.obsidian/community-plugins.json
+.obsidian/plugins/
 node_modules
