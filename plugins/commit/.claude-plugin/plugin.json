@@ -1,0 +1,8 @@
+{
+  "name": "commit",
+  "description": "変更内容を元にコミットを作成",
+  "version": "1.0.0",
+  "author": {
+    "name": "taka512"
+  }
+}

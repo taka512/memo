@@ -1,0 +1,20 @@
+{
+  "name": "taka512-marketplace",
+  "owner": {
+    "name": "taka512",
+    "email": "kapu512@gmail.com"
+  },
+  "metadata": {
+    "description": "開発用のClaude Codeプラグインマーケットプレイス",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "commit",
+      "source": "./develop",
+      "description": "ローカルの変更を元にgit commitを行う",
+      "category": "development",
+      "tags": ["development"]
+    }
+  ]
+}
